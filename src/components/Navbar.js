@@ -1,60 +1,72 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
+  const BtnClick = () => {
+    alert("test");
+  };
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          {props.title}
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                Home
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        Text Converter
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <Link class="nav-link" to="/">
+              Home <span class="sr-only">(current)</span>
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/about">
+              about us
+            </Link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                Action
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" href="/">
-                {props.aboutText}
+              <a class="dropdown-item" href="#">
+                Another action
               </a>
-            </li>
-          </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-primary" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+              <a class="dropdown-item" href="#">
+                Something else here
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary" onClick={() => {}}>
+          Primary
+        </button>{" "}
       </div>
     </nav>
   );
 }
-
-Navbar.propTypes = {
-  title: PropTypes.string.isRequired,
-  aboutText: PropTypes.string.isRequired,
-};
-
-Navbar.defaultProps = {
-  title: "set title here",
-  aboutText: "About",
-};

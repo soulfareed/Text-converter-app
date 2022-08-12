@@ -1,6 +1,7 @@
+import { clear } from "@testing-library/user-event/dist/clear";
 import React, { useState } from "react";
 
-export default function Textform(props) {
+export default function Home(props) {
   const handleUpClick = () => {
     console.log("Uppercase was clicked:" + text);
     let newText = text.toUpperCase();
@@ -14,8 +15,8 @@ export default function Textform(props) {
   };
 
   const handleClearClick = () => {
-    console.log("Clear was clicked:" + text);
-    let newText = text.toLowerCase();
+    console.log("Clear was clicked:" + clear);
+    let newText = "";
     setText(newText);
   };
 
@@ -42,11 +43,11 @@ export default function Textform(props) {
         <button className="btn btn-primary mx-1" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary " onClick={handleLoClick}>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleLoClick}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary " onClick={handleClearClick}>
-          Convert to Lowercase
+        <button className="btn btn-primary mx-1" onClick={handleClearClick}>
+          Clear Text
         </button>
       </div>
 

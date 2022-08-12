@@ -1,18 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Textform from "./components/Textform";
-
+import About from "./pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 function App() {
   return (
-    <>
-      {/* <Navbar title="Textutils2" aboutText="AboutTextUtils" /> */}
-      <Navbar title="Textutils" />
-      <div className="container my-3">
-        {" "}
-        <Textform heading="Enter the text to analyze" />
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar title="React App" aboutText="About" />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
