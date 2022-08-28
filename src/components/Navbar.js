@@ -8,9 +8,9 @@ export default function Navbar(props) {
   };
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <Link class="navbar-brand" to="/" style={{ fontSize: 30 }}>
         Text Converter
-      </a>
+      </Link>
       <button
         class="navbar-toggler"
         type="button"
@@ -26,7 +26,7 @@ export default function Navbar(props) {
         <ul class="navbar-nav">
           <li class="nav-item active">
             <Link class="nav-link" to="/">
-              Home <span class="sr-only">(current)</span>
+              Home
             </Link>
           </li>
           <li class="nav-item">
