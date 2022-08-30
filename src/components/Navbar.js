@@ -2,17 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default function Navbar(props) {
+export default function Navbar({ toggleMode, mode }) {
   const BtnClick = () => {
     alert("test");
   };
+
+  const styleCss = {
+    backgroundColor: "red",
+    color: "white",
+  };
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <Link class="navbar-brand" to="/" style={{ fontSize: 30 }}>
+    <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
+      <Link className="navbar-brand mx-2" to="/" style={{ fontSize: 30 }}>
         Text Converter
       </Link>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
@@ -20,52 +26,42 @@ export default function Navbar(props) {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <Link class="nav-link" to="/">
+      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav">
+          <li className="nav-item active">
+            <Link className="nav-link" to="/">
               Home
             </Link>
           </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/about">
-              about us
+          <li className="nav-item">
+            <Link className="nav-link" to="/about">
+              About Us
             </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li className="nav-item">
+            <a className="nav-link" href="#">
               Pricing
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">
-                Action
-              </a>
-              <a class="dropdown-item" href="#">
-                Another action
-              </a>
-              <a class="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
-          </li>
         </ul>
-        <button type="button" class="btn btn-primary" onClick={() => {}}>
-          Primary
-        </button>{" "}
+        <div className="form-check form-switch text-light">
+          <input
+            className="form-check-input"
+            onClick={() => {
+              console.log("test");
+              toggleMode();
+            }}
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+
+          <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
+            Enable Dark Mode
+          </label>
+        </div>
       </div>
     </nav>
   );
