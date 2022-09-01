@@ -3,9 +3,35 @@ import React, { useState } from "react";
 
 export default function Home(props) {
   const handleUpClick = () => {
+    const [mode, setMode] = useState("light");
+
+    const [alert, setAlert] = useState(null);
+
+    const showAlert = (message, type) => {
+      setAlert({
+        msg: message,
+        type: type,
+      });
+    };
+    alert = { alert };
+
+    const toggleMode = () => {
+      if (mode === "light") {
+        setMode("dark");
+        document.body.style.backgroundColor = "#3874cd";
+        showAlert("Dark mode has been enabled", "success");
+      } else {
+        setMode("light");
+        document.body.style.backgroundColor = "white";
+        showAlert("Light mode has been enabled", "success");
+      }
+    };
+
     console.log("Uppercase was clicked:" + text);
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Successfully converted to uppercase", "success");
+    console.log((showAlert = { showAlert }));
   };
 
   const handleLoClick = () => {
@@ -47,6 +73,10 @@ export default function Home(props) {
             className="form-control"
             value={text}
             onChange={handleOnChange}
+            style={{
+              backgroundColor: "#dee2e6",
+              color: "black ",
+            }}
             id="myBox"
             rows="12"
           ></textarea>
@@ -69,13 +99,13 @@ export default function Home(props) {
       </div>
 
       <div className="container">
-        <h2>Your text summary</h2>
+        <h2>Your text summary </h2>
         <p>
           {text.split(" ").length} words and {text.length} characters.
         </p>
         <p>{0.008 * text.split(" ").length} Minutes read </p>
         <h3>Preview</h3>
-        <p>{text}</p>
+        <p>{text.length > 0 ? text : "Enter something to preview it"}</p>
       </div>
     </>
   );

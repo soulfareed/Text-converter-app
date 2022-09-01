@@ -46,7 +46,11 @@ export default function Navbar({ toggleMode, mode }) {
             </a>
           </li>
         </ul>
-        <div className="form-check form-switch text-light">
+        <div
+          className={`form-check form-switch text-${
+            mode === "light" ? "dark" : "light"
+          }`}
+        >
           <input
             className="form-check-input"
             onClick={() => {
