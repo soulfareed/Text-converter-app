@@ -3,35 +3,10 @@ import React, { useState } from "react";
 
 export default function Home(props) {
   const handleUpClick = () => {
-    const [mode, setMode] = useState("light");
-
-    const [alert, setAlert] = useState(null);
-
-    const showAlert = (message, type) => {
-      setAlert({
-        msg: message,
-        type: type,
-      });
-    };
-    alert = { alert };
-
-    const toggleMode = () => {
-      if (mode === "light") {
-        setMode("dark");
-        document.body.style.backgroundColor = "#3874cd";
-        showAlert("Dark mode has been enabled", "success");
-      } else {
-        setMode("light");
-        document.body.style.backgroundColor = "white";
-        showAlert("Light mode has been enabled", "success");
-      }
-    };
-
     console.log("Uppercase was clicked:" + text);
     let newText = text.toUpperCase();
     setText(newText);
     props.showAlert("Successfully converted to uppercase", "success");
-    console.log((showAlert = { showAlert }));
   };
 
   const handleLoClick = () => {
