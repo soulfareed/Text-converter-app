@@ -37,7 +37,7 @@ export default function Navbar({ toggleMode, mode }) {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/about">
-              About Us
+              About
             </Link>
           </li>
           <li className="nav-item">

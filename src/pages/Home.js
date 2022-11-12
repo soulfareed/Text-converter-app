@@ -33,7 +33,7 @@ export default function Home(props) {
   };
 
   const handleExtraSpaces = () => {
-    var newText = text.split(/[ ]+/);
+    var newText = text.split(/[]+/);
     setText(newText.join(" "));
   };
 
@@ -78,7 +78,7 @@ export default function Home(props) {
         <p>
           {text.split(" ").length} words and {text.length} characters.
         </p>
-        <p>{0.008 * text.split(" ").length} Minutes read </p>
+        <p>{0.008 * text.split("").length} Minutes read </p>
         <h3>Preview</h3>
         <p>{text.length > 0 ? text : "Enter something to preview it"}</p>
       </div>
