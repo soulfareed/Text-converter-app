@@ -22,7 +22,7 @@ export default function Home(props) {
   };
 
   const handleOnChange = (event) => {
-    // console.log("On change");
+    console.log("On change");
     setText(event.target.value);
   };
 
