@@ -21,11 +21,6 @@ export default function Home(props) {
     setText(newText);
   };
 
-  const handleOnChange = (event) => {
-    console.log("On change");
-    setText(event.target.value);
-  };
-
   const handleCopy = () => {
     var text = document.getElementById("myBox");
     text.select();
