@@ -66,6 +66,9 @@ export default function Home(props) {
         <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>
           Remove ExtraSpace
         </button>
+        <button className="btn btn-primary mx-1" onClick={handleSpaces}>
+          Remove ExtraSpace
+        </button>
       </div>
 
       <div className="container">
