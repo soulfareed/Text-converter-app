@@ -99,6 +99,4 @@ const WelcomeScreen = () => (
     <Text style={heading}>Debug</Text>
     <Text>
       Press Cmd + M or Shake your device to open the React Native Debug Menu.
-    </Text>
-    <Text style={heading}>Learn</Text>
-    <Text>Read the docs to discover what to do next:</Text>
+  
