@@ -97,6 +97,4 @@ const WelcomeScreen = () => (
     <Text style={heading}>See Your Changes</Text>
     <Text>Press Cmd + R inside the simulator to reload your app’s code.</Text>
     <Text style={heading}>Debug</Text>
-    <Text>
-      Press Cmd + M or Shake your device to open the React Native Debug Menu.
   
