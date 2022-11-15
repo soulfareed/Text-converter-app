@@ -91,8 +91,4 @@ import { heading } from "./Typography";
 
 const WelcomeScreen = () => (
   <>
-    <Header title="Welcome to React Native" />
-    <Text style={heading}>Step One</Text>
-    <Text>Edit App.js to change this screen and turn it into your app.</Text>
-    <Text style={heading}>See Your Changes</Text>
-  
+ 
