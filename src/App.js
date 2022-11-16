@@ -38,10 +38,13 @@ function App() {
         title="React App"
         aboutText="About"
         mode={mode}
-        toggleMode={toggleMode}/>
+        toggleMode={toggleMode}
+      />
       <Alert alert={alert} />
       <Routes>
-        <Route path="/" element={<Home showAlert={showAlert} />}
+        <Route
+          path="/"
+          element={<Home showAlert={showAlert} />}
           mode={mode}
         ></Route>
         <Route path="/about" element={<About />}></Route>
@@ -51,22 +54,3 @@ function App() {
 }
 
 export default App;
-
-
-- Start: Previous -->
-<div class="swiper-button-prev"></div><!-- End: Previous -->
-<!-- Start: Next -->
-<div class="swiper-button-next"></div><!-- End: Next -->
-</div><!-- End: Slideshow -->
-</div><!-- End: Simple Slider -->
-<!-- Start: Bold BS4 Footer Big Logo -->
-<footer id="myFooter">
-<div class="container-fluid">
-<div class="row text-center">
-<div class="col-12 col-sm-6 col-md-2">
-<h5>Get started</h5>
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Downloads<br></a></li>
-    <li><a href="#">Sign Up</a></li>
-    <li><a href="#">Othe
