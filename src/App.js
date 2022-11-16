@@ -53,14 +53,7 @@ function App() {
 export default App;
 
 
-
-<div class="swiper-slide"
-style="background: url(&quot;/assets/img/WhatsApp%20Image%202022-10-31%20at%2011.27.45%20PM(1).jpeg?h=ffc4508bc18423bbd789415cea338797&quot;) center no-repeat;/*height: 100%;*/width: 100%;">
-</div><!-- End: Slide -->
-</div><!-- End: Slide Wrapper -->
-<!-- Start: Pagination -->
-<div class="swiper-pagination"></div><!-- End: Pagination -->
-<!-- Start: Previous -->
+- Start: Previous -->
 <div class="swiper-button-prev"></div><!-- End: Previous -->
 <!-- Start: Next -->
 <div class="swiper-button-next"></div><!-- End: Next -->
