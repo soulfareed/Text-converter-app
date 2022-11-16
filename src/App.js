@@ -54,30 +54,6 @@ export default App;
 
 
 
-
-<li class="nav-item nav-items"><a class="nav-link active" href="#" target="_blank">Gallery</a></li>
-<li class="nav-item nav-items"><a class="nav-link active" href="#" target="_blank">Refund Policy</a>
-</li>
-<li class="nav-item nav-items"><a class="nav-link active" href="#" target="_blank">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav><!-- End: Navbar Right Links -->
-<!-- Start: Simple Slider -->
-<div class="simple-slider">
-<!-- Start: Slideshow -->
-<div class="swiper-container">
-<!-- Start: Slide Wrapper -->
-<div class="swiper-wrapper">
-<!-- Start: Slide -->
-<div class="swiper-slide"
-style="background: url(&quot;/assets/img/WhatsApp%20Image%202022-10-31%20at%2011.35.16%20PM.jpeg?h=93fcd026e584998fcdd28dde9f892bb7&quot;) center / cover no-repeat;width: 100%;">
-</div><!-- End: Slide -->
-<!-- Start: Slide -->
-<div class="swiper-slide"
-style="background: url(&quot;/assets/img/WhatsApp%20Image%202022-10-31%20at%2011.27.43%20PM(1).jpeg?h=9b962ab85e047da5ec955662cdb0ec25&quot;) center center / cover no-repeat;">
-</div><!-- End: Slide -->
-<!-- Start: Slide -->
 <div class="swiper-slide"
 style="background: url(&quot;/assets/img/WhatsApp%20Image%202022-10-31%20at%2011.27.45%20PM(1).jpeg?h=ffc4508bc18423bbd789415cea338797&quot;) center no-repeat;/*height: 100%;*/width: 100%;">
 </div><!-- End: Slide -->
