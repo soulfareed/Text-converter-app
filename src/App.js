@@ -54,8 +54,3 @@ function App() {
 }
 
 export default App;
-s="row footer-copyright">
-<div class="col">
-    <p>© 2016 Copyright Tet ~ Designed By&nbsp;<a href="#">MySelf</a></p>
-</div>
-</div>
