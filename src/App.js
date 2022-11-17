@@ -54,15 +54,8 @@ function App() {
 }
 
 export default App;
-
-
-          class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i
-            class="fa fa-linkedin"></i></a><button class="btn btn-primary" style="margin-top:20px;"
-        type="button">Contact us</button>
-</div>
-</div>
-<div class="row footer-copyright">
+s="row footer-copyright">
 <div class="col">
-    <p>© 2016 Copyright Text ~ Designed By&nbsp;<a href="#">MySelf</a></p>
+    <p>© 2016 Copyright Tet ~ Designed By&nbsp;<a href="#">MySelf</a></p>
 </div>
 </div>
