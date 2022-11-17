@@ -56,13 +56,7 @@ function App() {
 export default App;
 
 
-
-</ul>
-</div>
-<div class="col-md-3 social-networks">
-    <div></div><a class="facebook" href="#"><i class="fa fa-facebook"></i></a><a class="twitter"
-        href="#"><i class="fa fa-twitter"></i></a><a class="google" href="#"><i
-            class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i
+          class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i
             class="fa fa-linkedin"></i></a><button class="btn btn-primary" style="margin-top:20px;"
         type="button">Contact us</button>
 </div>
