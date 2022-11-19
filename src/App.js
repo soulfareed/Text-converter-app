@@ -57,6 +57,5 @@ export default App;
 
 
 class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i
-class="fa fa-linkedin"></i></a><button class="btn btn-primary" style="margin-top:20px;"
-type="button">Contac
+className=""
 </div>
