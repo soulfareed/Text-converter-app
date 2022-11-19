@@ -57,5 +57,3 @@ export default App;
 
 
 class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i
-className=""
-</div>
