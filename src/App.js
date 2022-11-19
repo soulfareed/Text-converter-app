@@ -54,6 +54,3 @@ function App() {
 }
 
 export default App;
-
-
-class="fa fa-google-plus"></i></a><a 
