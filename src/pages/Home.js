@@ -33,12 +33,15 @@ export default function Home(props) {
   };
 
   const [text, setText] = useState("");
+  const handleOnChange = (e) => {
+    setText(e.target.value);
+  };
   return (
     <>
       <div className="container">
         <h1>{props.heading}</h1>
         <div className="mb-3">
-          {/* <label for="myBox" class="form-label"></label> */}
+          <label for="myBox" class="form-label"></label>
           <textarea
             className="form-control"
             value={text}
@@ -64,9 +67,6 @@ export default function Home(props) {
           Copy Text
         </button>
         <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>
-          Remove ExtraSpace
-        </button>
-        <button className="btn btn-primary mx-1" onClick={handleSpaces}>
           Remove ExtraSpace
         </button>
       </div>
