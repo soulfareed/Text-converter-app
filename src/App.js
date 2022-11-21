@@ -55,10 +55,4 @@ function App() {
 
 export default App;
 
-
-
-
-<p>{0.008 * text.split("").length} Minutes read </p>
-<h3>Preview</h3>
-<p>{text.length > 0 ? text : "Enter something to preview it"}</p>
-
+<p>{0.008 * text.split("").length} Minutes read </p>;
