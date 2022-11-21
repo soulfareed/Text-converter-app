@@ -54,5 +54,3 @@ function App() {
 }
 
 export default App;
-
-<p>{0.008 * text.split("").length} Minutes read </p>;
