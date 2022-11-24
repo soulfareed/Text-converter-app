@@ -62,11 +62,11 @@ export default function Navbar({ toggleMode, mode }) {
             id="flexSwitchCheckDefault"
           />
 
-          <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
+          {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
             Enable Dark Mode
           </label>
         </div>
       </div>
-    </nav>
+    </nav> */}
   );
 }
