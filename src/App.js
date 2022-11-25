@@ -54,3 +54,9 @@ function App() {
 }
 
 export default App;
+
+<Route path="/about" element={<About />}></Route>
+</Routes>
+</BrowserRouter>
+);
+}
